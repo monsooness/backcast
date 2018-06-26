@@ -4,17 +4,23 @@ var Videos = Backbone.Collection.extend({
   
   //pass each youtube fake video into video model and add to videos collection
   
- initialize: function() {
-    this.on('change', function () {
-      this.sort();
-    }, this);
+  initialize: function(videos) {
+    // if(videos) {
+    //   for (let i = 0; i < videos.length; i++) {
+    //     var videoListEntryView = new VideoListEntryView();
+    //     videoListEntryView.model = this.model(videos[i]);
+    //   }
+    // }
   },
 
-  comparator: 'title',
+  // comparator: 'title',
 
-  sortByField: function(field) {
-    this.comparator = field;
-    this.sort();
+  // sortByField: function(field) {
+  //   this.comparator = field;
+  //   this.sort();
+  // }
+  reset : function() {
+    
   }
   
 
